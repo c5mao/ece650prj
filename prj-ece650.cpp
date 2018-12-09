@@ -105,6 +105,7 @@ void* bool_reduction(void* arg){
     unsigned int n=vertex;
     unsigned int k;
     Minisat::Var *x=NULL;
+    MiniVC.clear();
 
     Minisat::vec<Minisat::Lit> literals;
 
@@ -176,6 +177,7 @@ void* approx_vc_1(void* arg){
 	int v_deg[vertex]={0};
 	int i;
 	int max_index;
+	vc_1.clear();
 
 	//Calculate the init degree of each vertex
 	for(i=0;i<(int)edge.size();i++){
@@ -204,6 +206,7 @@ void* approx_vc_1(void* arg){
 void* approx_vc_2(void* arg){
 	vector<edge_t> edge=edge_obj;
 	int i,j;
+	vc_2.clear();
     
     //Find the vetex with highest degree, add it to vc_1 set, set the incident edge to (-1,-1), recalculate the degree
 	for(i=0;i<(int)edge.size();i++){
