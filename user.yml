@@ -1,7 +1,14 @@
 --- # Personal information
+- student1: 
+email: c5mao@uwaterloo.ca
 first: CHUNYU
 last: MAO
-watiam: C5MAO
 student: 20767068
-email: c5mao@uwaterloo.ca
+watiam: C5MAO
+- student2: 
+email: chunxiao.li@uwaterloo.ca
+first: CHUNXIAO
+last: LI
+student: 20484023
+watiam: C279LI
 ...
